@@ -8,7 +8,19 @@ namespace DiamanteDeX.ConsoleApp
 {
     internal class Desenhar
     {
-        public static void desenharTriangulo()
+        public static void desenharTriangulo(int entrada)
+        {
+        }
+
+        public static void desenharParteSuperior(int entrada)
+        {
+        }
+
+        public static void desenharParteInferior(int entrada)
+        {
+        }
+
+        public static void desenharLinha()
         {
         }
     }
