@@ -14,7 +14,7 @@ namespace DiamanteDeX.ConsoleApp
         {
             while (true)
             {
-                Console.WriteLine("Digite um número ímpar para desenhar seu triângulo de X: ");
+                Console.WriteLine("\nDigite um número ímpar para desenhar o seu triângulo de X: ");
                 string entrada = Console.ReadLine();
 
                 if (!entrada.All(char.IsDigit)) //permite apenas dígito.

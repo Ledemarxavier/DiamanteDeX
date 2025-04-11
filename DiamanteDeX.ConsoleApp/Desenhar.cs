@@ -11,6 +11,7 @@ namespace DiamanteDeX.ConsoleApp
     {
         public void DesenharTriangulo(int numero)
         {
+            //Desenha as duas parte do triângulo, superior e inferior.
             DesenharParteSuperior(numero);
             DesenharParteInferior(numero);
         }
@@ -41,7 +42,7 @@ namespace DiamanteDeX.ConsoleApp
             string espacosStr = new string(' ', espacos);
             string xStr = new string('X', quantidadeDeX);
 
-            Console.WriteLine(espacosStr);
+            Console.Write(espacosStr);
             Console.WriteLine(xStr);
         }
     }
