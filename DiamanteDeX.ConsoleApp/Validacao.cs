@@ -9,7 +9,7 @@ namespace DiamanteDeX.ConsoleApp
     internal class Validacao
     {
         //método para verificar se a entrada do usúario é válida.
-        public static void entradaUsuario()
+        public static int EntradaUsuario()
 
         {
             while (true)
@@ -17,26 +17,29 @@ namespace DiamanteDeX.ConsoleApp
                 Console.WriteLine("Digite um número ímpar para desenhar seu triângulo de X: ");
                 string entrada = Console.ReadLine();
 
-                if (int.Parse(entrada) == 1) //o 1 número é ímpar, mas não é válido para desenhar o triângulo.
+                if (!entrada.All(char.IsDigit)) //permite apenas dígito.
                 {
-                    mensagemDeErro();
+                    MensagemDeErro();
                     continue;
                 }
-                else if (!entrada.All(char.IsDigit)) //permite apenas dígito.
+
+                int numero = int.Parse(entrada);
+
+                if (numero == 1) //o 1 número é ímpar, mas não é válido para desenhar o triângulo.
                 {
-                    mensagemDeErro();
+                    MensagemDeErro();
                     continue;
                 }
-                else if (int.Parse(entrada) % 2 == 0) //permite apenas número inteiro ímpar.
+                else if (numero % 2 == 0) //permite apenas número inteiro ímpar.
                 {
-                    mensagemDeErro();
+                    MensagemDeErro();
                     continue;
                 }
-                break;
+                return numero;
             }
         }
 
-        public static void mensagemDeErro()
+        public static void MensagemDeErro()
         {
             Console.WriteLine("ERRO: Entrada inválida! Digite apenas número ímpar > 1.");
         }

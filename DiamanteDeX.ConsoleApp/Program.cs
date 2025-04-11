@@ -6,7 +6,8 @@
         {
             while (true)
             {
-                Validacao.entradaUsuario();
+                int numero = Validacao.EntradaUsuario();
+                break;
             }
         }
     }
