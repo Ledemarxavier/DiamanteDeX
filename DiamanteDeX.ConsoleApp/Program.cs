@@ -7,6 +7,8 @@
             while (true)
             {
                 int numero = Validacao.EntradaUsuario();
+
+                Console.ReadLine();
                 break;
             }
         }

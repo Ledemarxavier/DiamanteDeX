@@ -23,6 +23,10 @@ namespace DiamanteDeX.ConsoleApp
 
         public static void DesenharLinha(int total, int quantidadeDeX)
         {
+            int espacos = (total - quantidadeDeX) / 2;
+
+            string espacosStr = new string(' ', espacos);
+            string xStr = new string('X', quantidadeDeX);
         }
     }
 }
