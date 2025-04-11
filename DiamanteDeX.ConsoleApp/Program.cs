@@ -7,7 +7,8 @@
             while (true)
             {
                 int numero = Validacao.EntradaUsuario();
-
+                Desenhar desenhar = new Desenhar();
+                desenhar.DesenharTriangulo(numero);
                 Console.ReadLine();
                 break;
             }

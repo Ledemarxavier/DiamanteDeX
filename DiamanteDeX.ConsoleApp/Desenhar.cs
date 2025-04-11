@@ -11,10 +11,16 @@ namespace DiamanteDeX.ConsoleApp
     {
         public void DesenharTriangulo(int numero)
         {
+            DesenharParteSuperior(numero);
         }
 
         public static void DesenharParteSuperior(int numero)
         {
+            // Desenha a parte superior, incrementanto os X de 2 em 2.
+            for (int i = 1; i <= numero; i += 2)
+            {
+                DesenharLinha(numero, i);
+            }
         }
 
         public static void DesenharParteInferior(int numero)
@@ -23,10 +29,14 @@ namespace DiamanteDeX.ConsoleApp
 
         public static void DesenharLinha(int total, int quantidadeDeX)
         {
+            // Calcula a quantidade de espaços para centralizar os X.
             int espacos = (total - quantidadeDeX) / 2;
 
             string espacosStr = new string(' ', espacos);
             string xStr = new string('X', quantidadeDeX);
+
+            Console.WriteLine(espacosStr);
+            Console.WriteLine(xStr);
         }
     }
 }
