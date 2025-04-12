@@ -28,7 +28,7 @@ namespace DiamanteDeX.ConsoleApp
         public static void DesenharParteInferior(int numero)
         {
             // Desenha a parte inferior, decrementando os X de 2 em 2
-            for (int i = numero; i >= 1; i -= 2)
+            for (int i = numero - 2; i >= 1; i -= 2)
             {
                 DesenharLinha(numero, i);
             }
