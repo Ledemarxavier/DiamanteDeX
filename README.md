@@ -1,6 +1,6 @@
 ## Diamante de X 
 
-![](https://imgur.com/Zhwx1Yp.gif)
+![](https://imgur.com/swPYD6e.gif)
 
 
 
